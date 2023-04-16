@@ -1,25 +1,39 @@
-// Manipulate the HTML DOM using Javscript
-// const heading = document.createElement("h1");
-// heading.innerHTML = "Namaste Everyone";
-// const root = document.getElementById("root");
-// root.appendChild(heading);
-
-// Manipulate the HTML DOM using React
-
+/*Parcel does all these below mentioned things
+*
+*Created A server
+*HMR  - Hot Module Replacement
+*File Watcher algorithm -> C++
+*Bundling
+*Minify
+*Cleaning our code
+*Dev and production build
+*superfast build algorithm
+*image optimization also
+*caching while development
+*Compatible with older version of browser
+*HTTPS on dev
+*port number
+*consistent hashing algorithm
+*
+*
+*Transitive Dependencies
+*/
 // Create nested React Elements
+import React from "react";
+import  ReactDOM  from "react-dom/client";
 const heading = React.createElement(
     "h1",
     {
       id: "title",
     },
-    "heading"
+    "Heading 1 from parcel"
   );
   const heading1 = React.createElement(
     "h1",
     {
       id: "title",
     },
-    "heading1"
+    "Heading1"
   );
   
   const container = React.createElement(
@@ -27,7 +41,7 @@ const heading = React.createElement(
     {
       id: "container",
     },
-    [heading, heading1]
+    [heading, heading1] 
   );
   
   // create root using createRoot
